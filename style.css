@@ -1,0 +1,29 @@
+/* CSS 
+
+NOSSA FOLHA DE ESTILIZAÇÃO DA PÁGINA HTML
+
+*/
+
+body {
+    background-color: rgb(221, 165, 247);
+    color: rgb(107, 43, 116);
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+}
+
+#TITULO {
+    color: rgb(180, 0, 105);
+}
+
+.divMenor {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+
+.divMaior {
+    width: 750px;
+    height: 459px;
+    text-align: center;
+}
