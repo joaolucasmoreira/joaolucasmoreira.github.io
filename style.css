@@ -10,6 +10,10 @@ body {
     text-align: left;
     font-size: 20px;
     display: flex;
+    
+}
+hr{
+    border-color: rgb(180, 0, 105);
 }
 
 #TITULO {
