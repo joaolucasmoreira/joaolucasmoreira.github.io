@@ -5,18 +5,19 @@ NOSSA FOLHA DE ESTILIZAÇÃO DA PÁGINA HTML
 */
 
 body {
+    padding: 50px;
     background-color: rgb(221, 165, 247);
     color: rgb(107, 43, 116);
     text-align: left;
     font-size: 20px;
     display: flex;
-    
 }
+
 hr{
     border-color: rgb(180, 0, 105);
 }
 
-#TITULO {
+h1 {
     color: rgb(180, 0, 105);
 }
 
@@ -28,6 +29,13 @@ hr{
 
 .divMaior {
     width: 750px;
-    height: 459px;
+    height: 400px;
+    text-align: center;
+}
+
+
+.divLinks {
+    width: 500px ;
+    height: 400px;
     text-align: center;
 }
