@@ -6,19 +6,38 @@ NOSSA FOLHA DE ESTILIZAÇÃO DA PÁGINA HTML
 
 body {
     padding: 50px;
-    background-color: rgb(221, 165, 247);
-    color: rgb(107, 43, 116);
+    background-color: rgb(220, 179, 240);
     text-align: left;
-    font-size: 20px;
+
     display: flex;
 }
 
+button{
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 20px;
+    border-style:ridge ;
+    font-size: 15px;
+    background-color: rgb(238, 175, 227);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(21, 2, 24);
+}
+
+p {
+    color: rgb(134, 71, 143);
+    font-size: 25px;
+}
+
 hr{
-    border-color: rgb(180, 0, 105);
+    border-color: rgb(201, 90, 155);
 }
 
 h1 {
-    color: rgb(180, 0, 105);
+    color: rgb(206, 90, 157);
+    font-size: 45px;
 }
 
 .divMenor {
@@ -38,4 +57,8 @@ h1 {
     width: 500px ;
     height: 400px;
     text-align: center;
+}
+
+.espacamentoEspecifico {
+    margin-top: 90px;
 }
