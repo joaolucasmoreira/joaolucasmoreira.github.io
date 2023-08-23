@@ -22,7 +22,7 @@ button{
     border-style:ridge ;
     font-size: 15px;
     background-color: rgb(238, 175, 227);
-    transition: all 1s;""
+    transition: all 1s;
 }
 
 a {
@@ -53,7 +53,7 @@ img{
 .divMenor {
     padding: 10px;
     margin: 10px;
-    width: 500px;
+    width: 502px;
     height: auto;
     text-align: center;
 }
@@ -62,16 +62,7 @@ img{
     padding: 10px;
     margin: 10px;
     width: 800px;
-    height: 502px;
-    text-align: center;
-}
-
-
-.divLinks {
-    padding: 10px;
-    margin: 10px;
-    width: 500px ;
-    height: 502px;
+    height: auto;
     text-align: center;
 }
 
@@ -79,3 +70,6 @@ img{
     margin-top: 90px;
 }
 
+.espacamentoEspecifico2 {
+    margin-top: 40px;
+}
