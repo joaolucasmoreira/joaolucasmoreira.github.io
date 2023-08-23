@@ -4,82 +4,96 @@ body {
 
 h1 {
     text-align: left;
+    color: rgb(230, 41, 182);
 }
 
-.noneMargin {
-    margin-bottom: -20px;
+h2 {
+    color:rgb(175, 82, 163);
+    font-size: 30px;
+    margin: 0px;
 }
 
-
-.divArtigos1 {
+section {
     display: flex;
+    width: 97%;
+    height: auto;
+    background-color: rgb(248, 192, 255);
+    padding: 5px 45px 10px 15px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+
+
+.divArtigos {
     padding: 15px;
-    margin: 5px;
-    width: auto;
     height: auto;
     border-radius: 15px;
+    width: 60%;
 }
 
-.divArtigos1 p {
-    text-align: left;
-    width: 1000px;
-}
-
-.divArtigos1 img {
-    width: 640px;
-    height: 360px;
+.divImagens img{
+    width: 100%;
     border-style:double ;
-    border-radius: 0%;
-    margin-top: 35px;
-    margin-left: 25px;
+    margin-left: 5%;
+    border-radius: 10%;
+}
+
+.divImagens{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
 }
 
 .divArtigos2 {
-    display: flex;
     padding: 15px;
-    margin: 5px;
-    width: auto;
     height: auto;
     border-radius: 15px;
+    width: 60%;
 }
 
-.divArtigos2 p {
-    text-align: left;
-    width: 1000px;
-    margin-top: 70px;
-}
-
-.divArtigos2 img {
-    width: 640px;
-    height: 360px;
+.divImagens2 img {
+    width: 100%;
     border-style:double ;
-    border-radius: 0%;
-    margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 5%;
+    border-radius: 10%;
     border-color: orange;
 }
 
-.divArtigos3 {
+.divImagens2 {
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.divArtigos3 {
     padding: 15px;
-    margin: 5px;
-    width: auto;
     height: auto;
     border-radius: 15px;
+    width: 60%;
 }
 
-.divArtigos3 p {
-    text-align: left;
-    width: 1000px;
-    margin-top: 60px;
-}
-
-.divArtigos3 img {
-    width: 640px;
-    height: 360px;
+.divImagens3 img{
+    width: 100%;
     border-style:double ;
-    border-radius: 0%;
-    margin-top: 10px;
-    margin-left: 25px;
+    margin-left: 5%;
+    border-radius: 10%;
     border-color: purple;
+}
+
+.divImagens3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.divArtigos1 p {
+    text-align: justify;
+    
 }
