@@ -2,9 +2,14 @@ body {
     display: block;
 }
 
+p {
+    text-align: justify;
+}
+
 h1 {
     text-align: left;
     color: rgb(230, 41, 182);
+    margin-top: 0px;
 }
 
 h2 {
@@ -23,7 +28,10 @@ section {
     margin-top: 25px;
 }
 
-
+#botaoCentro {
+    width: 100%;
+    text-align: right;
+}
 
 .divArtigos {
     padding: 15px;
@@ -35,6 +43,8 @@ section {
 .divImagens img{
     width: 100%;
     border-style:double ;
+    margin-top: 8%;
+    margin-bottom: 8%;
     margin-left: 5%;
     border-radius: 10%;
 }
@@ -57,6 +67,8 @@ section {
 .divImagens2 img {
     width: 100%;
     border-style:double ;
+    margin-top: 8%;
+    margin-bottom: 8%;
     margin-left: 5%;
     border-radius: 10%;
     border-color: orange;
@@ -80,6 +92,8 @@ section {
 .divImagens3 img{
     width: 100%;
     border-style:double ;
+    margin-top: 8%;
+    margin-bottom: 8%;    
     margin-left: 5%;
     border-radius: 10%;
     border-color: purple;
@@ -93,7 +107,4 @@ section {
     width: 40%;
 }
 
-.divArtigos1 p {
-    text-align: justify;
-    
-}
+
