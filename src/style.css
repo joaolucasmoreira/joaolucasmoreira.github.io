@@ -1,10 +1,52 @@
-/* CSS 
-
-NOSSA FOLHA DE ESTILIZAÇÃO DA PÁGINA HTML
-
-*/
+body {
+    padding: 0;
+    margin: 0;
+}
 
 body {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: block;
+}
+
+#idLogo {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+
+nav a:hover {
+    color: rgba(255, 255, 255, 0.812);
+    text-decoration: solid;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 
+        0 2px 5px 0 rgba(0, 0, 0, 0.12)
+}
+
+
+
+
+
+
+
+/* body { 
     padding: 50px;
     background-color: rgb(220, 179, 240);
     text-align: left;
@@ -72,4 +114,4 @@ img{
 
 .espacamentoEspecifico2 {
     margin-top: 40px;
-}
+} */
