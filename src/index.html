@@ -4,7 +4,7 @@
 
 <head>
     <meta charset=UFT-8>
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title> João Lucas Teixeira Moreira </title>
     <link rel="shortcut icon" href="./images/FOTO_PERFIL_JOAO_LUCAS.png" type="image/x-icon">
 </head>
@@ -12,29 +12,74 @@
 <body>
     <!-- HEADER -->
     <header class="card">
-        <nav class="nav-items">
-            <a class="button to-left padding-large" href="#inicio"><strong>VLS</strong></a>
-            <a class="button to-left padding-large" href="#sobre">SOBRE</a>
-            <a class="button to-left padding-large" href="#projetos">PROJETOS</a>
-            <a class="button to-left padding-large" href="#artigos">ARTIGOS</a>
-            <a class="button to-left padding-large" href="#contato">CONTATO</a>
+        <nav class="nav-items orange-ground">
+            <a class="button to-left" href="#inicio"> <img src="./images/logo.png" alt=""></a>
+            <a class="button to-left padding-large" href="#inicio"><strong> João Moreira </strong></a>
+            <a class="button to-right padding-large" href="#contato">CONTATO</a>
+            <a class="button to-right padding-large" href="#artigos">ARTIGOS</a>
+            <a class="button to-right padding-large" href="#projetos">PROJETOS</a>
+            <a class="button to-right padding-large" href="#sobre">SOBRE</a>
         </nav>
     </header>
+
     <div id="inicio" class="content">
         <section id="sobre" class="container content center padding-64">
             <h2 class="wide">SOBRE</h2>
-            <p class="opacity"><i>Amo a música e tecnlogia</i></p>
+            <p class="opacity"><i>Gosto de fazer academia e jogar</i></p>
             <p class="justify center">
-                Dou aula no SENAI e criei este site portifólio para servir de exemplo e modelo para meus alunos.
+                Cursando atualmente 2° ano do ensino médio na E.E. Desembargador Moreira dos Santos e também
+                cursando Técnico em Infórmatica para internet na instituição Senai de <a
+                    href="https://goo.gl/maps/sv6oF7wmWFdNmaMW8"> São Gonçalo do Rio Abaixo - MG </a>.
+                    Costumo jogar em horas de lazer, pelo menos uma vez por mês saio nos fins de semana com amigos e/ou
+            familiares, tenho interesse em seguir na carreira de programador
+            e ingressar em uma faculdade dentro dessa área.
             </p>
         </section>
-        <section id="projeto" class="container content center padding-64 black-ground">
+        
+        <section id="projetos" class="container content center padding-64 orange-ground">
             <h2 class="wide">PROJETOS</h2>
+            <div class="card-container">
+                <div class="cardBox">
+                    <h2>App Inventor</h2>
+                    <p>Meus projetos para celular</p>
+                    <a class="btn-card orange-ground" type="button" href="./src/pages/">Ir</a>
+                </div>
+                <div class="cardBox">
+                    <h2>Meu GitHub</h2>
+                    <p>Meu repositório no GitHub</p>
+                    <a class="btn-card orange-ground" type="button" href="https://github.com/joaolucasmoreira" target="_blank">Ir</a>
+                </div>
+            </div>
         </section>
-        <section id="artigos" class="container content center padding-64"> ARTIGOS </section>
-        <section id="contato" class="container content center padding-32 black-ground"> CONTATO </section>
+
+        <section id="artigos" class="container content center padding-64">
+            <h2 class="wide">ARTIGOS</h2>
+            <div class="card-container">
+                <div class="cardBox">
+                    <h2>Top 5 músicas</h2>
+                    <p>As melhores músicas, na minha opnião</p>
+                    <a class="btn-card orange-ground" type="button" href="./src/pages/articles.html">Leia Mais</a>
+                </div>
+                <div class="cardBox">
+                    <h2>Review de filmes</h2>
+                    <p>Minhas reviews</p>
+                    <a class="btn-card orange-ground" type="button" href="./src/pages/articles.html">Leia Mais</a>
+                </div>
+                <div class="cardBox">
+                    <h2>Realizações acadêmicas</h2>
+                    <p>Passeios, visitas téncnicas e outros</p>
+                    <a class="btn-card orange-ground" type="button" href="./src/pages/articles.html">Leia Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container content center padding-32 orange-ground">
+            <h2 class="wide">CONTATO</h2>
+        </section>
+
     </div>
-    <footer class="container content center">
+    
+    <footer class="container content">
         <p class="center opacity wide">By João Moreira</p>
     </footer>
 </body>
