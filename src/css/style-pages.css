@@ -12,7 +12,9 @@ h2 {
     height: 300px;
     border-radius: 7%;
     float: left;
-    margin-right: 15px;
+    margin-right: 45px;
+    margin-bottom: 20px;
+    margin-left: 20px;
  }
 
  #piratasdovale {
@@ -20,9 +22,51 @@ h2 {
     height: 300px;
     border-radius: 7%;
     float: left;
-    margin-right: 15px;
+    margin-right: 45px;
+    margin-bottom: 20px;
+    margin-left: 20px;
  }
 
+ #onepiece {
+    height: 100%;
+    width: 700px;
+    float: left;
+    margin-right: 35px;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-style:double;
+    border-radius: 6%;
+ }
+
+ #haikyu {
+    height: 394px;
+    width: 700px;
+    float: left;
+    margin-right: 35px;
+    margin-top: 15px;
+    margin-left: 100px;
+    border-style:double;
+    border-radius: 5%;
+ }
+
+ #onepunchman {
+    height: 395px;
+    width: 700px;
+    float: left;
+    margin-right: 35px;
+    margin-top: 30px;
+    margin-left: 100px;
+    border-style:double;
+    border-radius: 5%;
+ }
+
+ .margin-top30px {
+    margin-top: 30px;
+ }
+
+ .padding-top {
+    padding-top: 70px !important;
+ }
 
 
 

@@ -1,93 +1,93 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-size: 15px;
-    line-height: 1.5;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
-    justify-content: center;
-    align-items: center;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-    top: 0;
-    color: white;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    display: block;
+  top: 0;
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  display: block;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav {
-    overflow: hidden;
-    width: 100%;
-    box-sizing: inherit;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: inherit;
 }
 
 nav a {
-    color: inherit;
-    font-size: 15px;
+  color: inherit;
+  font-size: 15px;
 }
 
 nav a:hover {
-    color: rgba(255, 255, 255, 0.812);
-    text-decoration: solid;
+  color: rgba(255, 255, 255, 0.812);
+  text-decoration: solid;
 }
 
 .button {
-    text-align: center;
-    white-space: normal;
+  text-align: center;
+  white-space: normal;
 }
 
 .nav-items {
-    padding: 8px 16px;
-    width: auto;
-    border: none;
-    /* outline: 0; */
+  padding: 8px 16px;
+  width: auto;
+  border: none;
+  /* outline: 0; */
 }
 
 .card {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-        0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .to-right {
-    float: right !important;
+  float: right !important;
 }
 
 .to-left {
-    float: left !important;
+  float: left !important;
 }
 
 
 .padding-large {
-    padding: 12px 24px !important;
+  padding: 12px 24px !important;
 }
 
 .content {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-    padding: 0.01em 16px;
-    justify-content: center;
-    align-items: center;
+  padding: 0.01em 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .padding-64 {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important
+  padding-top: 64px !important;
+  padding-bottom: 64px !important
 }
 
 .wide {
-    letter-spacing: 4px;
+  letter-spacing: 4px;
 }
 
 h1,
@@ -96,174 +96,189 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 400;
-    margin: 10px 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 100px 0px;
+  font-size: 30px;
+  margin-bottom: 100px 0px;
 }
 
-.opacity{
-    opacity: 0.60;
+.opacity {
+  opacity: 0.60;
 }
 
-.justify{
-    text-align: justify;
+.justify {
+  text-align: justify;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important;
-  }
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
 
 section {
-    box-sizing: inherit;
-  }
+  box-sizing: inherit;
+}
 
- section p.justify{
-    width: auto;
-    margin: auto;
-    padding: 10px 100px 10px 100px;
- } 
+section p.justify {
+  width: auto;
+  margin: auto;
+  padding: 10px 100px 10px 100px;
+}
 
-  #inicio{
-    margin-top: 50px;
-  }
+.height800px {
+  height: 535px;
+}
 
-  .orange-ground{
-    background-color: rgb(255, 190, 94);
-    color: white;
-  }
+#inicio {
+  margin-top: 50px;
+}
 
-  footer{
-    margin-top: 0;
-    background-color: gainsboro;
-    font-size: 10px;
-  }
+footer {
+  margin-top: 0;
+  background-color: gainsboro;
+  font-size: 10px;
+}
 
-  .cardBox {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    height: 200px;
-    max-width:300px;
-    max-height: 200px;
-    text-align: center;
-    flex-shrink: 1;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    opacity: 75%
-  }
+.orange-ground {
+  background-color: rgb(255, 190, 94);
+  color: white;
+}
 
-  .cardBox:hover {
-    opacity: 100%;
-  }
+.cardBox {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  max-width: 300px;
+  max-height: 200px;
+  text-align: center;
+  flex-shrink: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 75%
+}
 
+.cardBox:hover {
+  opacity: 100%;
+  box-shadow: inset 0px 0px 7px 2px rgb(241, 180, 122);
+}
 
-  .btn-card {
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 1s;
-  }
-
-  .orange-ground .cardBox{
-    background-color: white;
-    color: black;
-  }
-
-  .btn-card:hover {
-        background-color: rgba(211, 211, 211, 0.76);
-        color: black;
-  }
-
-  .card-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #logo{
-    font-size: 1.7em;
-  }
-
-  img {
-    width: 42px;
-    height: 42px;
-  }
-
-  .icon img{
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width:300px;
-    max-height: 200px;
-    text-align: center;
-    flex-shrink: 1;
-    margin-left: 20px;
-    margin-right: 20px;
-    opacity: 85%;
-  }
-
-  #github {
-    width: 180px;
-    height: 150px;  
-    padding-left: 0px;
-  }
-
-  #linkedin {
-    width: 120px;
-    height: 150px;
-  }
-
-  #gmail {
-    width: 120px;
-    height: 150px;
-    margin-right: 8px;
-  }
-
-  #whatsapp {
-    width: 120px;
-    height: 150px;
-    margin-left: 35px;
-  }
-
-  #instagram {
-    width: 135px;
-    height: 150px;
-    margin-left: 15px;
-  }
-
-  .icon img:hover{
-    transform: scale(1.1);
-    opacity: 100%;
-  }
-
-  .icon img:active{
-    transform: scale(0.98);
-  }
-
-  .opacity100 {
-    opacity: 100% !important;
-  }
+.hover-white:hover {
+  box-shadow: inset 0px 0px 10px 2px white;
+}
 
 
-  
+.btn-card {
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.orange-ground .cardBox {
+  background-color: white;
+  color: black;
+}
+
+.btn-card:hover {
+  background-color: rgba(189, 128, 15, 0.76);
+  color: rgba(255, 223, 182, 0.993);
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  font-size: 1.7em;
+}
+
+img {
+  width: 42px;
+  height: 42px;
+}
+
+.icon img {
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 300px;
+  max-height: 200px;
+  text-align: center;
+  flex-shrink: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  opacity: 85%;
+}
+
+#github {
+  width: 180px;
+  height: 150px;
+  padding-left: 0px;
+}
+
+#linkedin {
+  width: 120px;
+  height: 150px;
+}
+
+#gmail {
+  width: 120px;
+  height: 150px;
+  margin-right: 8px;
+}
+
+#whatsapp {
+  width: 120px;
+  height: 150px;
+  margin-left: 35px;
+}
+
+#instagram {
+  width: 135px;
+  height: 150px;
+  margin-left: 15px;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+  opacity: 100%;
+}
+
+.icon img:active {
+  transform: scale(0.98);
+}
+
+.opacity100 {
+  opacity: 100% !important;
+}
