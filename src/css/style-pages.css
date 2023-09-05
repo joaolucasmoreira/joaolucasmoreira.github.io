@@ -12,7 +12,7 @@ h2 {
     height: 300px;
     border-radius: 7%;
     float: left;
-    margin-right: 45px;
+    margin-right: 30px;
     margin-bottom: 20px;
     margin-left: 20px;
  }
@@ -22,7 +22,7 @@ h2 {
     height: 300px;
     border-radius: 7%;
     float: left;
-    margin-right: 45px;
+    margin-right: 30px;
     margin-bottom: 20px;
     margin-left: 20px;
  }
@@ -32,14 +32,14 @@ h2 {
     width: 700px;
     float: left;
     margin-right: 35px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 100px;
     border-style:double;
     border-radius: 6%;
  }
 
  #haikyu {
-    height: 394px;
+    height: 100%;
     width: 700px;
     float: left;
     margin-right: 35px;
@@ -50,7 +50,7 @@ h2 {
  }
 
  #onepunchman {
-    height: 395px;
+    height: 100%;
     width: 700px;
     float: left;
     margin-right: 35px;
@@ -58,6 +58,7 @@ h2 {
     margin-left: 100px;
     border-style:double;
     border-radius: 5%;
+
  }
 
  .margin-top30px {
@@ -66,6 +67,10 @@ h2 {
 
  .padding-top {
     padding-top: 70px !important;
+ }
+
+ .bottom77px {
+   margin-bottom: 77px;
  }
 
 
