@@ -1,95 +1,77 @@
 body {
-    font-size: 20px;
+   font-size: 20px;
 }
 
 h2 {
-    text-align: left;
-    margin-left: 7px;
+   text-align: left;
+   margin-left: 7px;
 }
 
- #aredesocial {
-    width: auto;
-    height: 300px;
-    border-radius: 7%;
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-left: 20px;
- }
+#aredesocial {
+   width: auto;
+   height: 300px;
+   border-radius: 7%;
+   float: left;
+   margin-right: 30px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+}
 
- #piratasdovale {
-    width: auto;
-    height: 300px;
-    border-radius: 7%;
-    float: left;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    margin-left: 20px;
- }
+#piratasdovale {
+   width: auto;
+   height: 300px;
+   border-radius: 7%;
+   float: left;
+   margin-right: 30px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+}
 
- #onepiece {
-    height: 100%;
-    width: 700px;
-    float: left;
-    margin-right: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    border-style:double;
-    border-radius: 6%;
- }
+#onepiece {
+   height: 100%;
+   width: 700px;
+   float: left;
+   margin-right: 35px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 5px;
+   border-style: double;
+   border-radius: 6%;
+}
 
- #haikyu {
-    height: 100%;
-    width: 700px;
-    float: left;
-    margin-right: 35px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    border-style:double;
-    border-radius: 5%;
- }
+#haikyu {
+   height: 100%;
+   width: 700px;
+   float: left;
+   margin-right: 35px;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   margin-left: 5px;
+   border-style: double;
+   border-radius: 5%;
+}
 
- #onepunchman {
-    height: 100%;
-    width: 700px;
-    float: left;
-    margin-right: 35px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    border-style:double;
-    border-radius: 5%;
+#onepunchman {
+   height: 100%;
+   width: 700px;
+   float: left;
+   margin-right: 35px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   margin-left: 5px;
+   border-style: double;
+   border-radius: 5%;
 
- }
+}
 
- .margin-top30px {
-    margin-top: 30px;
- }
+.margin-top30px {
+   margin-top: 30px;
+}
 
- .padding-top {
-    padding-top: 70px !important;
- }
+.padding-top {
+   padding-top: 70px !important;
+}
 
- .bottom77px {
+.bottom77px {
    margin-bottom: 77px;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
+}

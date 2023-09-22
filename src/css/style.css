@@ -7,12 +7,12 @@ body {
   font-size: 15px;
   line-height: 1.5;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #f0eeee;
   justify-content: center;
   align-items: center;
 }
 
-header {
+.header-JL {
   top: 0;
   color: white;
   width: 100%;
@@ -156,14 +156,24 @@ section p.justify {
   margin-top: 50px;
 }
 
-footer {
+.footer-JL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 0;
   background-color: gainsboro;
   font-size: 10px;
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-JL p {
+  margin: 5px;
 }
 
 .orange-ground {
-  background-color: rgb(255, 190, 94);
+  background-color: rgb(255, 187, 61);
   color: white;
 }
 
@@ -286,10 +296,20 @@ img {
   opacity: 100% !important;
 }
 
-.px5Top {
-  padding-top: 5px !important;
+.px0Top {
+  padding-top: 0px !important;
 }
 
-.px20Top {
-  padding-top: 20px !important;
+.px0Top {
+  padding-top: 0px !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: rgb(255, 190, 94);
+  border-radius: 11px;
+}
+
+.carousel-control-next-icon {
+  background-color: rgb(255, 190, 94);
+  border-radius: 11px;
 }

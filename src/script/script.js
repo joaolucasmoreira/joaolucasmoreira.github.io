@@ -12,5 +12,14 @@ function openContent(event, nomeArtigo) {
     event.currentTarget.className += " active";
   }
   
-  // buscando o elemento com ID aberto por padrão
-  document.getElementById("abertoPorPadrao").click();
+  var url_atual = window.location.href;
+  var artigoPadrao=''
+  var a = url_atual.indexOf('#')
+  for(var i=a+1; i<url_atual.length;i++){
+    artigoPadrao+=url_atual[i]
+  }
+  if(artigoPadrao==url_atual){
+    document.getElementById('artigo1').click();
+  }else{
+    document.getElementById(`${artigoPadrao}`).click();
+  }
