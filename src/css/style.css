@@ -81,6 +81,16 @@ nav a:hover {
   align-items: center;
 }
 
+.container-JL {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  justify-content: left;
+
+}
+
 .padding-64 {
   padding-top: 64px !important;
   padding-bottom: 64px !important
