@@ -2,308 +2,413 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../../public/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
-    <style>
-        #grade1 {
-            margin: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../../../public/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+  <style>
+    #grade1 {
+      margin: 20px;
+    }
 
-        #grade2 {
-            margin: 20px;
-        }
+    #atividade5 {
+      margin: 20px;
+      align-items: center;
+      justify-content: center;
+    }
 
-        #grade2 button {
-            max-width: 100px;
-        }
+    #atividade5 button {
+      width: 100px;
+      height: 270px;
+    }
 
-        #grade3 {
-            margin: 20px;
-        }
-        
-        body{
-            padding: 20px;
-        }
-        .col-3 {
-            border: 1px solid black;
-            padding: 5px;
-        }
-    </style>
+    #grade3 {
+      margin: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #grade3 .col-3 {
+      max-width: 435px;
+    }
+
+    #resultCon {
+      width: 100%;
+    }
+
+
+    body {
+      padding: 20px;
+      background-color: rgb(255, 203, 246);
+    }
+
+    button {
+      border-radius: 7px;
+      border: 1px solid black;
+      background-color: rgb(233, 146, 207);
+    }
+
+    .col-3 {
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 3%;
+      background-color: rgb(216, 167, 255);
+      max-width: 400px;
+      margin: 3px;
+    }
+  </style>
+
 </head>
 
 <body>
+  <div id="grade1" class="row d-flex justify-content-center">
+    <div id="atividade1" class="col-3 ">
+      <h2>Atividade 1</h2>
 
-    <div id="grade1" class="row">
-        <div class="col-3">
-            <h2>Atividade 1</h2>
+      <p>Insira sua Idade</p>
+      <input type="number" id="idade" />
 
-            <p>Insira sua Idade</p>
-            <input type="number" id="idade">
+      <button onclick="compIdade()">Salvar</button>
 
-            <button onclick="compIdade()">Salvar</button>
-
-            <p id="resultIdade"></p>
-        </div>
-
-        <div class="col-3">
-            <h2>Atividade 2</h2>
-
-            <p>Insira um número para ser comparado</p>
-            <input type="number" id="number1">
-            <p>Insira outro número para comparar</p>
-            <input type="number" id="number2">
-
-            <button onclick="compNumeros()">Comparar</button>
-
-            <p id="resultComp"></p>
-        </div>
-
-        <div class="col-3">
-            <h2>Atividade 3</h2>
-
-            <p>Insira um número para ser divido</p>
-            <input type="number" id="numberDiv">
-            <p>Insira um número para dividir</p>
-            <input type="number" id="numberDiv2">
-
-            <button onclick="compDiv()">Dividir</button>
-
-            <p id="resultDiv"></p>
-        </div>
-
-        <div class="col-3">
-            <h2>Atividade 4</h2>
-
-            <p>Insira um valor de temperatura °C</p>
-            <input type="number" id="numberTemp">
-
-            <button onclick="verifTemp()">Verificar</button>
-
-            <p id="resultTemp"></p>
-        </div>
+      <p id="resultIdade"></p>
     </div>
 
-    
-       
-        <div id="grade2" class="row">
-            <h2>Atividade 5</h2>
+    <div id="atividade2" class="col-3">
+      <h2>Atividade 2</h2>
 
-            <h4>ATENÇÃO! O primeiro e segundo Trimestre valem no máximo 30 e o terceiro 40.</h4>
-            
-            <div class="col-3">
-                <h5>Insira suas notas de Português em cada Trimestre</h5>
-                <p>1° Trimestre</p>
-                <input type="number" id="port1">
-                <p>2° Trimestre</p>
-                <input type="number" id="port2">
-                <p>3° Trimestre</p>
-                <input type="number" id="port3">
-            </div>
-            
-            <div class="col-3">
-                <h5>Insira suas notas de Exatas em cada Trimestre</h5>
-                <p>1° Trimestre</p>
-                <input type="number" id="mat1">
-                <p>2° Trimestre</p>
-                <input type="number" id="mat2">
-                <p>3° Trimestre</p>
-                <input type="number" id="mat3">
-            </div>
-            
-            <div class="col-3">
-                <h5>Insira suas notas de História em cada Trimestre</h5>
-                <p>1° Trimestre</p>
-                <input type="number" id="his1">
-                <p>2° Trimestre</p>
-                <input type="number" id="his2">
-                <p>3° Trimestre</p>
-                <input type="number" id="his3">
-            </div>
-   
-            <button onclick="verifApro()">Verificar</button>    
-        <p id="resultPort"></p>
-        <p id="resultMat"></p>
-        <p id="resultHis"></p> 
-        </div>
-        
+      <p>Insira um número para ser comparado</p>
+      <input type="number" id="number1" />
+      <p>Insira outro número para comparar</p>
+      <input type="number" id="number2" />
+      <br />
+      <br />
+      <button onclick="compNumeros()">Comparar</button>
 
-
-
-    <div id="grade3" class="row">
-        <div class="col-3">
-            <h2>Atividade 6</h2>
-
-            <p>Insira um número para ser calculado seu fatorial</p>
-            <input type="number" id="numberFat">
-
-            <button onclick="verifFat()">Calcular</button>
-
-            <p id="resultFat"></p>
-        </div>
-
-        <div class="col-3">
-            <h2>Atividade 7</h2>
-
-            <p>Insira um número para ser feita uma contagem regressiva</p>
-            <input type="number" id="numberCon">
-
-            <button onclick="fazerCon()">Fazer</button>
-
-            <p id="resultCon"></p>
-        </div>
-
-        <div class="col-3">
-            <h2>Atividade 8</h2>
-
-            <p>Insira um número para ser mostrado sua tabuada</p>
-            <input type="number" id="numberTab">
-
-            <button onclick="fazerTab()">Fazer</button>
-
-            <p id="resultTab"></p>
-        </div>
+      <p id="resultComp"></p>
     </div>
 
-    <script>
-        // Atividade 1
+    <div id="atividade3" class="col-3">
+      <h2>Atividade 3</h2>
 
-        function compIdade() {
-            let idade = parseFloat(document.getElementById('idade').value);
+      <p>Insira um número para ser divido</p>
+      <input type="number" id="numberDiv" />
+      <p>Insira um número para dividir</p>
+      <input type="number" id="numberDiv2" />
+      <br /><br />
+      <button onclick="compDiv()">Dividir</button>
 
-            if (idade == "") {
-                document.getElementById('resultIdade').innerText = "Insira algum valor!"
-            } else if (idade < 18) {
-                document.getElementById('resultIdade').innerText = "Você é menor de idade!"
-            } else if (idade < 65) {
-                document.getElementById('resultIdade').innerText = "Você é um adulto!";
-            } else {
-                document.getElementById('resultIdade').innerText = "Você é um idoso!";
-            }
+      <p id="resultDiv"></p>
+    </div>
+
+    <div id="atividade4" class="col-3">
+      <h2>Atividade 4</h2>
+
+      <p>Insira um valor de temperatura °C</p>
+      <input type="number" id="numberTemp" />
+
+      <button onclick="verifTemp()">Verificar</button>
+
+      <p id="resultTemp"></p>
+    </div>
+  </div>
+
+  <div id="atividade5" class="row">
+    <h2 class="d-flex justify-content-center">Atividade 5</h2>
+    <h4 class="d-flex justify-content-center">Atenção! Primeiro e Segundo Trimestre são de 30 pontos, já o Terceiro é de
+      40 pontos!</h4>
+
+
+    <div class="col-3">
+      <h5>Insira suas notas de Português</h5>
+      <p>1° Trimestre</p>
+      <input type="number" id="port1" />
+      <p>2° Trimestre</p>
+      <input type="number" id="port2" />
+      <p>3° Trimestre</p>
+      <input type="number" id="port3" />
+      <p id="resultPort"></p>
+    </div>
+
+    <div class="col-3">
+      <h5>Insira suas notas de Exatas</h5>
+      <p>1° Trimestre</p>
+      <input type="number" id="mat1" />
+      <p>2° Trimestre</p>
+      <input type="number" id="mat2" />
+      <p>3° Trimestre</p>
+      <input type="number" id="mat3" />
+      <p id="resultMat"></p>
+
+    </div>
+
+    <div class="col-3">
+      <h5>Insira suas notas de História</h5>
+      <p>1° Trimestre</p>
+      <input type="number" id="his1" />
+      <p>2° Trimestre</p>
+      <input type="number" id="his2" />
+      <p>3° Trimestre</p>
+      <input type="number" id="his3" />
+      <p id="resultHis"></p>
+    </div>
+    <button onclick="verifApro()">Verificar</button>
+
+  </div>
+
+  <div id="grade3" class="row">
+    <div id="atividade6" class="col-3">
+      <h2>Atividade 6</h2>
+
+      <p>Insira um número para ser calculado seu fatorial</p>
+      <input type="number" id="numberFat" />
+
+      <button onclick="verifFat()">Calcular</button>
+
+      <p id="resultFat"></p>
+    </div>
+
+    <div id="atividade7" class="col-3">
+      <h2>Atividade 7</h2>
+
+      <p>Insira um número para ser feita uma contagem regressiva</p>
+      <input type="number" id="numberCon" />
+
+      <button onclick="fazerCon()">Fazer</button>
+
+      <div id="ajust">
+        <p id="resultCon"></p>
+      </div>
+    </div>
+
+    <div id="atividade8" class="col-3">
+      <h2>Atividade 8</h2>
+
+      <p>Insira um número para ser mostrado sua tabuada</p>
+      <input type="number" id="numberTab" />
+
+      <button onclick="fazerTab()">Fazer</button>
+
+      <p id="resultTab"></p>
+    </div>
+  </div>
+
+  <script>
+    // Atividade 1
+
+    function compIdade() {
+      if (!verifVazio(1) && !verifNegativo(1)) {
+        let idade = parseFloat(document.getElementById("idade").value);
+
+        if (idade == "") {
+          document.getElementById("resultIdade").innerText =
+            "Insira algum valor!";
+        } else if (idade < 18) {
+          document.getElementById("resultIdade").innerText =
+            "Você é menor de idade!";
+        } else if (idade < 65) {
+          document.getElementById("resultIdade").innerText =
+            "Você é um adulto!";
+        } else {
+          document.getElementById("resultIdade").innerText = "Você é um idoso!";
+        }
+      }
+    }
+
+    // Atividade 2
+
+    function compNumeros() {
+      if (!verifVazio(2)) {
+        let number1 = parseFloat(document.getElementById("number1").value);
+        let number2 = parseFloat(document.getElementById("number2").value);
+
+        if (number1 == "" || number2 == "") {
+          document.getElementById("resultComp").innerText =
+            "Preencha os dois campos para que seja possível comparar!";
+        } else if (number1 == number2) {
+          document.getElementById("resultComp").innerText =
+            "Os números são iguais!";
+        } else if (number1 > number2) {
+          document.getElementById("resultComp").innerText =
+            number1 + " é maior que " + number2 + "!";
+        } else {
+          document.getElementById("resultComp").innerText =
+            number2 + " é maior que " + number1 + "!";
+        }
+      }
+    }
+
+    // Atividade 3
+
+    function compDiv() {
+
+      if (!verifVazio(3)) {
+        let numberDiv = parseFloat(document.getElementById("numberDiv").value);
+        let numberDiv2 = parseFloat(
+          document.getElementById("numberDiv2").value
+        );
+
+        if (numberDiv % numberDiv2 == 0) {
+          document.getElementById("resultDiv").innerText =
+            numberDiv + " / " + numberDiv2 + " = " + numberDiv / numberDiv2;
+        } else {
+          document.getElementById("resultDiv").innerText =
+            numberDiv + " não é divisivel por " + numberDiv2;
+        }
+      }
+    }
+
+
+    // Atividade 4
+
+    function verifTemp() {
+      if (!verifVazio(4) && !verifNegativo(4)) {
+        let numberTemp = parseFloat(
+          document.getElementById("numberTemp").value
+        );
+
+        if (numberTemp < 19) {
+          document.getElementById("resultTemp").innerText = "Está frio!";
+        } else if (numberTemp < 30) {
+          document.getElementById("resultTemp").innerText = "Está agradável!";
+        } else {
+          document.getElementById("resultTemp").innerText = "Está quente!";
+        }
+      }
+    }
+
+    // Atividade 5
+
+    function verifApro() {
+      let port1 = parseFloat(document.getElementById("port1").value);
+      let port2 = parseFloat(document.getElementById("port2").value);
+      let port3 = parseFloat(document.getElementById("port3").value);
+      let mat1 = parseFloat(document.getElementById("mat1").value);
+      let mat2 = parseFloat(document.getElementById("mat2").value);
+      let mat3 = parseFloat(document.getElementById("mat3").value);
+      let his1 = parseFloat(document.getElementById("his1").value);
+      let his2 = parseFloat(document.getElementById("his2").value);
+      let his3 = parseFloat(document.getElementById("his3").value);
+
+      if (port1 > 30 || port2 > 30 || port3 > 40 || mat1 > 30 || mat2 > 30 || mat3 > 40 || his1 > 30 || his2 > 30 || his3 > 40) {
+        alert("Preencha os Trimestres de acordo com os seus valores máximos!");
+      } else if (!verifVazio(5) && !verifNegativo(5)) {
+        if (port1 + port2 + port3 >= 60) {
+          document.getElementById("resultPort").innerText =
+            "Em Português o aluno foi aprovado com uma média de " +
+            ((port1 + port2 + port3) / 3).toFixed(2) + " ponto(s)!";
+        } else {
+          document.getElementById("resultPort").innerText =
+            "Em Português o aluno foi reprovado com uma média de " +
+            ((port1 + port2 + port3) / 3).toFixed(2) + " ponto(s)!";
         }
 
-        // Atividade 2
-
-        function compNumeros() {
-            let number1 = parseFloat(document.getElementById('number1').value);
-            let number2 = parseFloat(document.getElementById('number2').value);
-
-            if (number1 == "" || number2 == "") {
-                document.getElementById('resultComp').innerText = "Preencha os dois campos para que seja possível comparar!";
-            } else if (number1 == number2) {
-                document.getElementById('resultComp').innerText = "Os números são iguais!"
-            } else if (number1 > number2) {
-                document.getElementById('resultComp').innerText = number1 + " é maior que " + number2 + "!";
-            } else {
-                document.getElementById('resultComp').innerText = number2 + " é maior que " + number1 + "!";
-            }
+        if (mat1 + mat2 + mat3 >= 60) {
+          document.getElementById("resultMat").innerText =
+            "Em Matemática o aluno foi aprovado com uma média de " +
+            ((mat1 + mat2 + mat3) / 3).toFixed(2) + " ponto(s)!";
+        } else {
+          document.getElementById("resultMat").innerText =
+            "Em Matemática o aluno foi reprovado com uma média de " +
+            ((mat1 + mat2 + mat3) / 3).toFixed(2) + " ponto(s)!";
         }
 
-        // Atividade 3
+        if (his1 + his2 + his3 >= 60) {
+          document.getElementById("resultHis").innerText =
+            "Em Históra o aluno foi aprovado com uma média de " +
+            ((his1 + his2 + his3) / 3).toFixed(2) + " ponto(s)!";
+        } else {
+          document.getElementById("resultHis").innerText =
+            "Em Históra o aluno foi reprovado com uma média de " +
+            ((his1 + his2 + his3) / 3).toFixed(2) + " ponto(s)!";
+        }
+      }
+    }
 
-        function compDiv() {
-            let numberDiv = parseFloat(document.getElementById('numberDiv').value);
-            let numberDiv2 = parseFloat(document.getElementById('numberDiv2').value);
+    // Atividade 6
 
-            if (numberDiv % numberDiv2 == 0) {
-                document.getElementById('resultDiv').innerText = numberDiv + " / " + numberDiv2 + " = " + numberDiv / numberDiv2;
-            } else {
-                document.getElementById('resultDiv').innerText = numberDiv + " não é divisivel por " + numberDiv2;
-            }
+    function verifFat() {
+      if (!verifVazio(6) && !verifNegativo(6)) {
+        let numberFat = parseFloat(document.getElementById("numberFat").value);
+        let result = numberFat;
+
+        let processo = ""
+
+        for (let i = numberFat; i > 1; i--) {
+          processo+=`${i} x `
+          result = result * (i - 1);
+        }
+        processo+= "1"
+        document.getElementById("resultFat").innerText =   `${numberFat}! = ${processo} = ${result}`                         
+      }
+    }
+
+    // Atividade 7
+
+    function fazerCon() {
+      if (!verifVazio(7) && !verifNegativo(7)) {
+        let numberCon = parseFloat(document.getElementById("numberCon").value);
+        let array = [];
+
+        for (let i = numberCon; i >= 0; i--) {
+          array.push(` ${i}`);
         }
 
-        // Atividade 4
+        document.querySelector("#resultCon").innerText = array;
+      }
+    }
 
-        function verifTemp() {
-            let numberTemp = parseFloat(document.getElementById('numberTemp').value);
+    // Atividade 8
 
-            if (numberTemp < 19) {
-                document.getElementById('resultTemp').innerText = "Está frio!";
-            } else if (numberTemp < 30) {
-                document.getElementById('resultTemp').innerText = "Está agradável!";
-            } else {
-                document.getElementById('resultTemp').innerText = "Está quente!";
-            }
+    function fazerTab() {
+      if (!verifVazio(8)) {
+        let numberTab = parseFloat(
+          document.getElementById("numberTab").value
+        );
+        resultado = "";
+
+        for (let i = 0; i != 10; i++) {
+          resultado +=
+            numberTab + " X " + (i + 1) + " = " + numberTab * (i + 1) + "\n";
         }
+        document.getElementById("resultTab").innerText = resultado;
+      }
+    }
 
-        // Atividade 5
+    // Verificar campos vazios
 
-        function verifApro() {
-            let port1 = parseFloat(document.getElementById('port1').value)
-            let port2 = parseFloat(document.getElementById('port2').value);
-            let port3 = parseFloat(document.getElementById('port3').value);
-            let mat1 = parseFloat(document.getElementById('mat1').value);
-            let mat2 = parseFloat(document.getElementById('mat2').value);
-            let mat3 = parseFloat(document.getElementById('mat3').value);
-            let his1 = parseFloat(document.getElementById('his1').value);
-            let his2 = parseFloat(document.getElementById('his2').value);
-            let his3 = parseFloat(document.getElementById('his3').value);
+    function verifVazio(id) {
+      let inputs = document.querySelectorAll(`#atividade${id} input`);
+      let error = false;
 
-            // if (mat1=="NaN" || mat2=="" || mat3=="" || port1=="" || port2=="" || port3=="" || his1=="" || his2=="" || his3=="" || mat1<0 || mat2<0 || mat3<0 || port1<0 || port2<0 || port3<0 || his1<0 || his2<0 || his3<0 || mat1>30 || mat2>30 || mat3>40 || port1>30 || port2>30 || port3>40 || his1>30 || his2>30 || his3>40) {
-            //     document.getElementById('resultPort').innerText = "Preencha todas as notas de cada Trimestre em cada matéria com um número maior ou igual a 0 e menor ou igual ao valor do trimestre!";
-
-            // } 
-
-            if (port1 + port2 + port3 >= 60) {
-                document.getElementById('resultPort').innerText = "Em Português o aluno foi aprovado com uma média de " + ((port1 + port2 + port3) / 3).toFixed(2);
-            } else {
-                document.getElementById('resultPort').innerText = "Em Português o aluno foi reprovado com uma média de " + ((port1 + port2 + port3) / 3).toFixed(2);
-            }
-
-            if (mat1 + mat2 + mat3 >= 60) {
-                document.getElementById('resultMat').innerText = "Em Matemática o aluno foi aprovado com uma média de " + ((mat1 + mat2 + mat3) / 3).toFixed(2);
-            } else {
-                document.getElementById('resultMat').innerText = "Em Matemática o aluno foi reprovado com uma média de " + ((mat1 + mat2 + mat3) / 3).toFixed(2);
-            }
-
-            if (his1 + his2 + his3 >= 60) {
-                document.getElementById('resultHis').innerText = "Em Históra o aluno foi aprovado com uma média de " + ((his1 + his2 + his3) / 3).toFixed(2);
-            } else {
-                document.getElementById('resultHis').innerText = "Em Históra o aluno foi reprovado com uma média de " + ((his1 + his2 + his3) / 3).toFixed(2);
-            }
+      inputs.forEach((item) => {
+        if (item.value == "") {
+          error = true;
         }
+      });
+      if (error) {
+        alert("Preencha todos os campos!");
+      }
+      return error;
+    }
 
-        // Atividade 6
+    // Verificar valor negativo
 
-        function verifFat() {
-            let numberFat = parseFloat(document.getElementById('numberFat').value);
-            let result = numberFat;
+    function verifNegativo(id) {
+      let inputs = document.querySelectorAll(`#atividade${id} input`);
+      let error = false;
 
-            for (let i = numberFat; i > 1; i--) {
-                result = result * (i - 1);
-            }
-            document.getElementById('resultFat').innerText = numberFat + "! = " + result;
-
+      inputs.forEach((item) => {
+        if (item.value < 0) {
+          error = true;
         }
+      });
+      if (error) {
+        alert("Não pode haver valor negativo!");
+      }
+      return error;
+    }
 
-
-        // Atividade 7
-
-        function fazerCon() {
-            let numberCon = parseFloat(document.getElementById('numberCon').value);
-            let array = []
-
-            for (let i = numberCon; i >= 0; i--) {
-                array.push(i)
-            }
-
-            document.querySelector("#resultCon").innerText = array
-        }
-
-        // Atividade 8
-
-        function fazerTab() {
-            let numberTab = parseFloat(document.getElementById('numberTab').value);
-            resultado = "";
-
-            for (let i = 0; i != 10; i++) {
-                resultado += numberTab + " X " + (i + 1) + " = " + (numberTab * (i + 1)) + "\n";
-            }
-            document.getElementById('resultTab').innerText = resultado;
-        }
-    </script>
-
+  </script>
 </body>
 
 </html>
