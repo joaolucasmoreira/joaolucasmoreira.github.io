@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-pages.css">
+</head>
+
+<body>
+
+    <header class="card header-JL">
+        <nav class="nav-items orange-ground">
+            <a class="button to-left" href="#inicio"> <img src="../images/logo.png" alt=""></a>
+            <a class="button to-left padding-large" href="#inicio"><strong> João Moreira </strong></a>
+            <a class="button to-right padding-large" href="#contato">CONTATO</a>
+            <a class="button to-right padding-large" href="./src/pages/artigos.html">ARTIGOS</a>
+            <a class="button to-right padding-large" href="#projetos">PROJETOS</a>
+            <a class="button to-right padding-large" href="#sobre">SOBRE</a>
+        </nav>
+    </header>
+
+    <div class="centerBole">
+        <div id="orgBoletim">
+            <div id="trocar1">
+                <div>
+                    <label for="name">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="name">Escola: </label>
+                    <input type="text" name="escola" id="escola">
+                </div>
+                <div>
+                    <label for="name">Curso: </label>
+                    <input type="text" name="curso" id="curso">
+                </div>
+                <button onclick="trocar()">Salvar</button>
+            </div>
+
+            <div id="trocar2" class="row d-none">
+                <div class="col-4">
+                    <div class="row-cols-4" id="materia1">
+                        <div class="col-2 p-md-4">
+                            <label for="nomeMateria">Matéria</label>
+                            <select id="nomeMateria" name="select">
+                                <option value="Português">Português</option>
+                                <option value="Matemática">Matemática</option>
+                                <option value="História">História</option>
+                                <option value="Geografia">Geografia</option>
+                                <option value="Física">Física</option>
+                                <option value="Química">Química</option>
+                            </select>
+                        </div>
+                        <div class="col-2 p-md-4 input-group">
+                            <input type="number">
+                            <input type="number">
+                            <input type="number">
+                            <input type="number">
+                        </div>
+                    </div>
+                    <button onclick="save()">Verificar Notas</button>
+                    <p class="m-3 p-2" id="resultNotas"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer class="container content footer-JL">
+        <div>
+            <p class="center opacity wide">By João Lucas Teixeira Moreira</p>
+        </div>
+    </footer>
+
+    <script src="../script/script-boletim.js"></script>
+</body>
+
+</html>

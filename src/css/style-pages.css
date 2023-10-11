@@ -7,6 +7,10 @@ h2 {
    margin-left: 7px;
 }
 
+.footer-JL {
+   position: fixed;
+}
+
 #aredesocial {
    width: auto;
    height: 300px;
@@ -61,7 +65,25 @@ h2 {
    margin-left: 5px;
    border-style: double;
    border-radius: 5%;
+}
 
+html, body{
+   height: 100vh;
+}
+
+.centerBole {
+   width: 100%;
+   height: 100vh;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#orgBoletim {
+   width: 1500px;
+   height: 600px;
+   background-color: aliceblue;
 }
 
 .margin-top30px {
