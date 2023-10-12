@@ -67,6 +67,30 @@ h2 {
    border-radius: 5%;
 }
 
+#trocar1 {
+   margin-left: 17px;
+   margin-right: 17px;
+   width: 30%;
+   padding: 6px;
+}
+
+#trocar1 button {
+   border-radius: 4px;
+}
+
+#trocar1 .input-group-text {
+   width: 45px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#trocar2 {
+   margin-right: 17px;
+   width: 70%;
+}
+
 html, body{
    height: 100vh;
 }
@@ -76,14 +100,11 @@ html, body{
    height: 100vh;
    align-items: center;
    display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
 #orgBoletim {
-   width: 1500px;
-   height: 600px;
-   background-color: aliceblue;
+   width: 100%;
+   height: 800px;
 }
 
 .margin-top30px {

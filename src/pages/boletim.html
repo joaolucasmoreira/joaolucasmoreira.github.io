@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boletim App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../public/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-pages.css">
@@ -23,28 +26,47 @@
         </nav>
     </header>
 
-    <div class="centerBole">
-        <div id="orgBoletim">
-            <div id="trocar1">
-                <div>
-                    <label for="name">Nome: </label>
-                    <input type="text" name="nome" id="nome">
+    <main id="orgBoletim row container-fluid" class="centerBole">
+
+        <div id="trocar1" class="card row-cols-4 bg-info">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                <div class="form-floating">
+                    <input type="text" name="nome" id="nome" class="form-control" id="floatingInputGroup1"
+                        placeholder="Username">
+                    <label for="floatingInputGroup1">Insira o nome do aluno</label>
                 </div>
-                <div>
-                    <label for="name">Escola: </label>
-                    <input type="text" name="escola" id="escola">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-school"></i></span>
+                <div class="form-floating">
+                    <input type="text" name="escola" id="escola" class="form-control" id="floatingInputGroup1"
+                        placeholder="Username">
+                    <label for="floatingInputGroup1">Insira a Escola/Isntituição</label>
                 </div>
-                <div>
-                    <label for="name">Curso: </label>
-                    <input type="text" name="curso" id="curso">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fa-solid fa-graduation-cap"></i></span>
+                <div class="form-floating">
+                    <input type="text" name="curso" id="curso" class="form-control" id="floatingInputGroup1"
+                        placeholder="Username">
+                    <label for="floatingInputGroup1">Insira o curso</label>
                 </div>
+            </div>
+            
+            <div>
                 <button onclick="trocar()">Salvar</button>
             </div>
 
-            <div id="trocar2" class="row d-none">
+            </div>
+
+            <div id="trocar2" class="card row-cols-8 bg-warning">
                 <div class="col-4">
-                    <div class="row-cols-4" id="materia1">
-                        <div class="col-2 p-md-4">
+                    <div id="materia1">
+                        <div class="p-md-4">
                             <label for="nomeMateria">Matéria</label>
                             <select id="nomeMateria" name="select">
                                 <option value="Português">Português</option>
@@ -66,8 +88,8 @@
                     <p class="m-3 p-2" id="resultNotas"></p>
                 </div>
             </div>
-        </div>
-    </div>
+
+    </main>
 
 
 
