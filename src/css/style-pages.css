@@ -83,12 +83,35 @@ h2 {
    align-items: center;
    display: flex;
    justify-content: center;
-   align-items: center;
 }
 
 #trocar2 {
+   margin-top: 40px;
    margin-right: 17px;
    width: 70%;
+   height: auto;
+   overflow-y: scroll;
+}
+
+#orgTable {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+#orgTable button {
+   border-radius: 4px;
+}
+
+#orgTable input {
+   margin: 10px;
+}
+
+#notas {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 html, body{
