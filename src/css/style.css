@@ -206,7 +206,7 @@ section p.justify {
   color: rgba(255, 255, 255, 0.945);
 }
 
-.cardBoxArticles .wide{
+.cardBoxArticles .wide {
   margin-top: 30px !important;
   margin-bottom: 20px !important;
 }
@@ -339,8 +339,3 @@ img {
   background-size: cover;
   background-position: center;
 }
-
-
-
-
-

@@ -68,14 +68,13 @@ h2 {
 }
 
 #trocar1 {
-   margin-left: 17px;
    margin-right: 17px;
-   width: 30%;
+   width: 26%;
+   height: 340px;
    padding: 6px;
-}
-
-#trocar1 button {
-   border-radius: 4px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
 }
 
 #trocar1 .input-group-text {
@@ -85,18 +84,79 @@ h2 {
    justify-content: center;
 }
 
-#trocar2 {
-   margin-top: 40px;
-   margin-right: 17px;
-   width: 70%;
-   height: auto;
-   overflow-y: scroll;
+#trocar1 button {
+   border-radius: 7px;
+   background-color: white;
+   width: 200px;
 }
 
-#orgTable {
+#trocar1 label {
+   font-size: 17px;
+}
+
+#trocar2 {
+   width: 40%;
+   display: flex;
+}
+
+#trocar2 label {
+   font-size: 14px;
+}
+
+#trocar2 select {
+   border-radius: 8px;
+   width: 500px;
+   height: 40px;
+   margin-bottom: 10px;
+}
+
+#trocar2 input {
+   width: 200px;
+   border-radius: 5px;
+}
+
+#trocar2 button {
+   border-radius: 7px;
+   background-color: white;
+   margin: 10px;
+}
+
+#resultNotas {
+   margin-left: 17px;
+   height: 340px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   display: none;
+}
+
+#resultNotas div {
+   font-size: 18px;
    align-items: center;
    display: flex;
    justify-content: center;
+   height: 36px;
+}
+
+#resultNotas table {
+   margin: 0px;
+}
+
+#tituloBole {
+   width: 295px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(255, 187, 61);
+   position: fixed;
+}
+
+#orgTable {
+   height: 340px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(255, 187, 61);
+   padding: 5px;
 }
 
 #orgTable button {
@@ -109,25 +169,22 @@ h2 {
 
 #notas {
    align-items: center;
-   display: flex;
    justify-content: center;
-   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 
-html, body{
+html,
+body {
    height: 100vh;
 }
 
 .centerBole {
-   width: 100%;
-   height: 100vh;
    align-items: center;
-   display: flex;
 }
 
 #orgBoletim {
-   width: 100%;
-   height: 800px;
+   height: 100vh;
 }
 
 .margin-top30px {

@@ -17,18 +17,18 @@
 
     <header class="card header-JL">
         <nav class="nav-items orange-ground">
-            <a class="button to-left" href="#inicio"> <img src="../images/logo.png" alt=""></a>
-            <a class="button to-left padding-large" href="#inicio"><strong> João Moreira </strong></a>
-            <a class="button to-right padding-large" href="#contato">CONTATO</a>
-            <a class="button to-right padding-large" href="./src/pages/artigos.html">ARTIGOS</a>
-            <a class="button to-right padding-large" href="#projetos">PROJETOS</a>
-            <a class="button to-right padding-large" href="#sobre">SOBRE</a>
+            <a class="button to-left" href="/index.html#inicio"> <img src="../images/logo.png" alt=""></a>
+            <a class="button to-left padding-large" href="/index.html#inicio"><strong> João Moreira </strong></a>
+            <a class="button to-right padding-large" href="/index.html#contato">CONTATO</a>
+            <a class="button to-right padding-large" href="/index.html#artigos">ARTIGOS</a>
+            <a class="button to-right padding-large" href="/index.html#projetos">PROJETOS</a>
+            <a class="button to-right padding-large" href="/index.html#sobre">SOBRE</a>
         </nav>
     </header>
 
-    <main id="orgBoletim row container-fluid" class="centerBole">
+    <main id="orgBoletim" class="centerBole d-flex justify-content-center">
 
-        <div id="trocar1" class="card row-cols-4 bg-info">
+        <div id="trocar1" class="card bg-info">
 
             <div class="input-group mb-3">
                 <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
@@ -63,10 +63,11 @@
 
         </div>
 
-        <div id="trocar2" class="card row-cols-8">
-            <div id="orgTable" class="col-4 card">
-                <div class="p-md-4">
-                    <label for="nomeMateria">Matéria: </label>
+        <div id="trocar2" class="card">
+            <div id="orgTable" class="card">
+                <div class="">
+                    <label for="nomeMateria"> <b>Matéria: </b></label>
+                    <br>
                     <select id="nomeMateria" name="select">
                         <option value="Português">Português</option>
                         <option value="Matemática">Matemática</option>
@@ -76,17 +77,17 @@
                         <option value="Química">Química</option>
                     </select>
                 </div>
-                <div id="notas" class="col-2 p-md-4 input-group">
+                <div id="notas" class="input-group">
                    <b>1° Bimestre</b> <input type="number">
                    <b>2° Bimestre</b> <input type="number">
                    <b>3° Bimestre</b> <input type="number">
                    <b>4° Bimestre</b> <input type="number">
                 </div>
-
-                <button onclick="save()">Verificar Notas</button>
-                <div class="m-3 p-2" id="resultNotas"></div>
+                <button onclick="save()">Verificar Notas</button> 
             </div>
         </div>
+        <div id="resultNotas" class="card"></div>
+        
 
 
     </main>

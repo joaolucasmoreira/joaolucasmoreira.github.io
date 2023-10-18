@@ -4,8 +4,9 @@ let inputNotas = [];
 
 function save() {
   if (!verifMateAdd() && !verifVazio(2) && !verifNegativo(2)) {
+    document.querySelector("#resultNotas").style.display = "flex";
     let totalNotas = 0;
-    let resultados = `<b>BOLETIM</b> <br>`;
+    let resultados = `<br> <b id="tituloBole">BOLETIM</b> `;
 
     document.querySelectorAll("#trocar2 input").forEach((e) => {
       inputNotas.push(parseFloat(e.value));
@@ -20,16 +21,16 @@ function save() {
         total: totalNotas,
         info: `
                            
-        RESULTADO DE: <b>${nomeMateria.value.toLocaleUpperCase()}</b>
+        <div class="bg-info"><b>${nomeMateria.value.toLocaleUpperCase()}</b></div>
         <table class="table table-striped table-bordless">   
                 <tr><td><b>1º Bimestre:</b></td> <td>${inputNotas[0]}</td></tr>
                 <tr><td><b>2º Bimestre:</b></td> <td>${inputNotas[1]}</td></tr>
                 <tr><td><b>3º Bimestre:</b></td> <td>${inputNotas[2]}</td></tr>
                 <tr><td><b>4º Bimestre:</b></td> <td>${inputNotas[3]}</td></tr>
                 <tr><td>TOTAL FINAL:</td> <td><b>${totalNotas}</b></td></tr>
-                <tr><td>STATUS:</td> <td><b>${isAprovadoOuReprovado(
+                <tr><td>STATUS:</td> <td>${isAprovadoOuReprovado(
                   totalNotas
-                )}</b></td>
+                )}</td>
             </tr>
         </table>
                             `,
@@ -38,28 +39,50 @@ function save() {
       console.log(materias);
 
       materias.forEach((e) => {
-        resultados += `<br>` + e.info;
+        resultados += e.info;
       });
 
       resultNotas.innerHTML = resultados;
     }
   }
+  inputNotas = [];
 }
 
 function isAprovadoOuReprovado(valor) {
   if (valor >= 60) {
-    return "APROVADO";
+    return "<b class='text-success'>APROVADO</b>";
   } else {
-    return "REPROVADO";
+    return "<b class='text-danger'>REPROVADO</b>";
   }
 }
 
+function desabilitar(div) {
+  div == "trocar2"
+    ? (document.querySelector(`#${div} select`).disabled = true)
+    : null;
+
+  document.querySelector(`#${div} button`).disabled = true;
+  document.querySelectorAll(`#${div} input`).forEach((e) => {
+    e.disabled = true;
+  });
+}
+
+function habilitar(div) {
+  document.querySelector(`#${div} select`).disabled = false;
+  document.querySelector(`#${div} button`).disabled = false;
+  document.querySelectorAll(`#${div} input`).forEach((e) => {
+    e.disabled = false;
+  });
+}
+
+desabilitar("trocar2");
+
 function salvar() {
   if (!verifVazio(1)) {
-    document.querySelectorAll("#trocar1 input").forEach(e=>{
-        e.disabled = true
-    })
-}
+    desabilitar("trocar1");
+    habilitar("trocar2");
+    document.querySelector(`#${div} select`).disabled = false;
+  }
 }
 
 function verifVazio(id) {
@@ -95,15 +118,19 @@ function verifNegativo(id) {
 function verifMaxNotas() {
   for (let i = 0; i < inputNotas.length; i++) {
     if (i == 0 && inputNotas[0] > 20) {
+      inputNotas = [];
       alert("O 1° Bimestre tem valor máximo de 20!");
       return true;
     } else if (i == 1 && inputNotas[1] > 25) {
+      inputNotas = [];
       alert("O 2° Bimestre tem valor máximo de 25!");
       return true;
     } else if (i == 2 && inputNotas[2] > 25) {
+      inputNotas = [];
       alert("O 3° Bimestre tem valor máximo de 25!");
       return true;
     } else if (i == 3 && inputNotas[3] > 30) {
+      inputNotas = [];
       alert("O 4° Bimestre tem valor máximo de 30!");
       return true;
     }
@@ -122,5 +149,3 @@ function verifMateAdd() {
   });
   return erro;
 }
-
-
