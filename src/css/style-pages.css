@@ -11,6 +11,11 @@ h2 {
    position: fixed;
 }
 
+#trocar2 .row>* {
+   padding-left: 0;
+   padding-right: 18px;
+}
+
 #aredesocial {
    width: auto;
    height: 300px;
@@ -70,7 +75,7 @@ h2 {
 #trocar1 {
    margin-right: 17px;
    width: 26%;
-   height: 340px;
+   height: 33.5%;
    padding: 6px;
    align-items: center;
    display: flex;
@@ -78,7 +83,8 @@ h2 {
 }
 
 #trocar1 .input-group-text {
-   width: 45px;
+   width: 10%;
+   height: 85%;
    align-items: center;
    display: flex;
    justify-content: center;
@@ -87,31 +93,47 @@ h2 {
 #trocar1 button {
    border-radius: 7px;
    background-color: white;
-   width: 200px;
+   width: 100%;
+}
+
+#troc1Buuton {
+   width: 100%;
 }
 
 #trocar1 label {
    font-size: 17px;
 }
 
+#trocar1 input {
+   margin-bottom: 10px;
+}
+
 #trocar2 {
-   width: 40%;
+   width: 30%;
    display: flex;
 }
 
 #trocar2 label {
    font-size: 14px;
+   margin-left: 10.5%;
 }
 
 #trocar2 select {
    border-radius: 8px;
-   width: 500px;
    height: 40px;
    margin-bottom: 10px;
+   width: 80%;
+}
+
+
+#orgSelect {
+   width: 100%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
 }
 
 #trocar2 input {
-   width: 200px;
    border-radius: 5px;
 }
 
@@ -122,11 +144,18 @@ h2 {
 }
 
 #resultNotas {
+   width: 100%; 
+   font-size: 18px;
+   margin-top: -1px;
+}
+
+#orgResultNotas {
+   display: none;
+   width: 18%;
+   height: 33.1%;
    margin-left: 17px;
-   height: 340px;
    overflow-y: scroll;
    border-radius: 5px;
-   display: none;
 }
 
 #resultNotas div {
@@ -134,7 +163,7 @@ h2 {
    align-items: center;
    display: flex;
    justify-content: center;
-   height: 36px;
+   height: 10%;
 }
 
 #resultNotas table {
@@ -142,7 +171,7 @@ h2 {
 }
 
 #tituloBole {
-   width: 295px;
+   width: 17%;
    align-items: center;
    display: flex;
    justify-content: center;
@@ -151,10 +180,7 @@ h2 {
 }
 
 #orgTable {
-   height: 340px;
-   align-items: center;
-   display: flex;
-   justify-content: center;
+   height: 40%;
    background-color: rgb(255, 187, 61);
    padding: 5px;
 }
@@ -167,11 +193,9 @@ h2 {
    margin: 10px;
 }
 
-#notas {
-   align-items: center;
-   justify-content: center;
-   margin-top: 20px;
-   margin-bottom: 20px;
+#notas label {
+   font-size: 17px;
+   margin-left: 5%;
 }
 
 html,
@@ -197,4 +221,19 @@ body {
 
 .bottom77px {
    margin-bottom: 77px;
+}
+
+@media (max-width:983px){
+   #trocar1 label{
+      display: none;
+   }
+}
+
+@media (max-width:1600px){
+   #orgResultNotas {
+      width: 290px;
+   }
+   #tituloBole {
+      width: 272px;
+   }
 }

@@ -4,7 +4,7 @@ let inputNotas = [];
 
 function save() {
   if (!verifMateAdd() && !verifVazio(2) && !verifNegativo(2)) {
-    document.querySelector("#resultNotas").style.display = "flex";
+    document.querySelector("#orgResultNotas").style.display = "flex";
     let totalNotas = 0;
     let resultados = `<br> <b id="tituloBole">BOLETIM</b> `;
 
@@ -23,10 +23,10 @@ function save() {
                            
         <div class="bg-info"><b>${nomeMateria.value.toLocaleUpperCase()}</b></div>
         <table class="table table-striped table-bordless">   
-                <tr><td><b>1º Bimestre:</b></td> <td>${inputNotas[0]}</td></tr>
-                <tr><td><b>2º Bimestre:</b></td> <td>${inputNotas[1]}</td></tr>
-                <tr><td><b>3º Bimestre:</b></td> <td>${inputNotas[2]}</td></tr>
-                <tr><td><b>4º Bimestre:</b></td> <td>${inputNotas[3]}</td></tr>
+                <tr><td><b><label> 1º Bimestre:</b></label></td> <td>${inputNotas[0]}</td></tr>
+                <tr><td><b><label> 2º Bimestre:</b></label></td> <td>${inputNotas[1]}</td></tr>
+                <tr><td><b><label> 3º Bimestre:</b></label></td> <td>${inputNotas[2]}</td></tr>
+                <tr><td><b><label> 4º Bimestre:</b></label></td> <td>${inputNotas[3]}</td></tr>
                 <tr><td>TOTAL FINAL:</td> <td><b>${totalNotas}</b></td></tr>
                 <tr><td>STATUS:</td> <td>${isAprovadoOuReprovado(
                   totalNotas

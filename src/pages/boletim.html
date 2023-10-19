@@ -27,7 +27,7 @@
     </header>
 
     <main id="orgBoletim" class="centerBole d-flex justify-content-center">
-
+        
         <div id="trocar1" class="card bg-info">
 
             <div class="input-group mb-3">
@@ -57,7 +57,7 @@
                 </div>
             </div>
 
-            <div>
+            <div id="troc1Buuton">
                 <button onclick="salvar()">Salvar</button>
             </div>
 
@@ -65,8 +65,8 @@
 
         <div id="trocar2" class="card">
             <div id="orgTable" class="card">
-                <div class="">
-                    <label for="nomeMateria"> <b>Matéria: </b></label>
+                <label for="nomeMateria"> <b>Matéria: </b></label>
+                <div id="orgSelect">   
                     <br>
                     <select id="nomeMateria" name="select">
                         <option value="Português">Português</option>
@@ -77,27 +77,36 @@
                         <option value="Química">Química</option>
                     </select>
                 </div>
-                <div id="notas" class="input-group">
-                   <b>1° Bimestre</b> <input type="number">
-                   <b>2° Bimestre</b> <input type="number">
-                   <b>3° Bimestre</b> <input type="number">
-                   <b>4° Bimestre</b> <input type="number">
+
+                <div>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
                 </div>
+
+                <div class="container">
+                <div id="notas" class="row">
+                   <div id="col-6C" class="col-md-6">
+                   <label for=""> <b>1° Bimestre</b> </label> <input class="grade form-control item" type="number">
+                  <label for=""> <b>2° Bimestre</b> </label> <input class="grade form-control item"  type="number">
+                    </div>
+                    <div class="col-md-6">
+                  <label for=""> <b>3° Bimestre</b> </label> <input class="grade form-control item" type="number">
+                  <label for=""> <b>4° Bimestre</b> </label> <input class="grade form-control item" type="number">
+                    </div>  
+                </div>
+            </div>  
                 <button onclick="save()">Verificar Notas</button> 
             </div>
         </div>
+        <div id="orgResultNotas">
         <div id="resultNotas" class="card"></div>
-        
-
+        </div>
 
     </main>
-
-
-
-
-
-
-
 
     <footer class="container content footer-JL">
         <div>
