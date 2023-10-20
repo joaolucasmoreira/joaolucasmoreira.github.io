@@ -1,0 +1,15 @@
+.footer-JL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    background-color: gainsboro;
+    font-size: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-JL p {
+    margin: 5px;
+  }

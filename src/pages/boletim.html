@@ -9,25 +9,18 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../../public/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="/public/Header/header.css">
+    <link rel="stylesheet" href="/public/Footer/footer.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-pages.css">
 </head>
 
 <body>
 
-    <header class="card header-JL">
-        <nav class="nav-items orange-ground">
-            <a class="button to-left" href="/index.html#inicio"> <img src="../images/logo.png" alt=""></a>
-            <a class="button to-left padding-large" href="/index.html#inicio"><strong> João Moreira </strong></a>
-            <a class="button to-right padding-large" href="/index.html#contato">CONTATO</a>
-            <a class="button to-right padding-large" href="/index.html#artigos">ARTIGOS</a>
-            <a class="button to-right padding-large" href="/index.html#projetos">PROJETOS</a>
-            <a class="button to-right padding-large" href="/index.html#sobre">SOBRE</a>
-        </nav>
-    </header>
+    <div id="headerJ"> </div>
 
     <main id="orgBoletim" class="centerBole d-flex justify-content-center">
-        
+
         <div id="trocar1" class="card bg-info">
 
             <div class="input-group mb-3">
@@ -66,7 +59,7 @@
         <div id="trocar2" class="card">
             <div id="orgTable" class="card">
                 <label for="nomeMateria"> <b>Matéria: </b></label>
-                <div id="orgSelect">   
+                <div id="orgSelect">
                     <br>
                     <select id="nomeMateria" name="select">
                         <option value="Português">Português</option>
@@ -88,33 +81,35 @@
                 </div>
 
                 <div class="container">
-                <div id="notas" class="row">
-                   <div id="col-6C" class="col-md-6">
-                   <label for=""> <b>1° Bimestre</b> </label> <input class="grade form-control item" type="number">
-                  <label for=""> <b>2° Bimestre</b> </label> <input class="grade form-control item"  type="number">
+                    <div id="notas" class="row">
+                        <div id="col-6C" class="col-md-6">
+                            <label for=""> <b>1° Bimestre</b> </label> <input class="grade form-control item"
+                                type="number">
+                            <label for=""> <b>2° Bimestre</b> </label> <input class="grade form-control item"
+                                type="number">
+                        </div>
+                        <div class="col-md-6">
+                            <label for=""> <b>3° Bimestre</b> </label> <input class="grade form-control item"
+                                type="number">
+                            <label for=""> <b>4° Bimestre</b> </label> <input class="grade form-control item"
+                                type="number">
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                  <label for=""> <b>3° Bimestre</b> </label> <input class="grade form-control item" type="number">
-                  <label for=""> <b>4° Bimestre</b> </label> <input class="grade form-control item" type="number">
-                    </div>  
                 </div>
-            </div>  
-                <button onclick="save()">Verificar Notas</button> 
+                <button onclick="save()">Verificar Notas</button>
             </div>
         </div>
         <div id="orgResultNotas">
-        <div id="resultNotas" class="card"></div>
+            <div id="resultNotas" class="card"></div>
         </div>
 
     </main>
 
-    <footer class="container content footer-JL">
-        <div>
-            <p class="center opacity wide">By João Lucas Teixeira Moreira</p>
-        </div>
-    </footer>
+    <div id="footerJ"></div>
 
     <script src="../script/script-boletim.js"></script>
+    <script type="module" src="/public/Header/header.js"></script>
+    <script type="module" src="/public/Footer/footer.js"></script>
 </body>
 
 </html>
