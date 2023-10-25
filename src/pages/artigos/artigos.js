@@ -23,7 +23,3 @@ function openContent(event, nomeArtigo) {
   }else{
     document.getElementById(`${artigoPadrao}`).click();
   }
-
-  
-
-  

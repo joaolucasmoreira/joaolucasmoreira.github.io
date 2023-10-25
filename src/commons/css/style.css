@@ -298,19 +298,19 @@ img {
 }
 
 #backMusica {
-  background-image: url(../images/the-Weeknd2.jpg);
+  background-image: url(/public/images/the-Weeknd2.jpg);
   background-size: cover;
   background-position: center center;
 }
 
 #backReview {
-  background-image: url(../images/a-rede-social-Index.jpg);
+  background-image: url(/public/images/a-rede-social-Index.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #backAnime {
-  background-image: url(../images/onePieceIndex.png);
+  background-image: url(/public/images/onePieceIndex.png);
   background-size: cover;
   background-position: center;
 }

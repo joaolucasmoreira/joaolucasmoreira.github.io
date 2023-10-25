@@ -8,4 +8,4 @@ function footer() {
     `
   }
 
-footer();
+export default footer();
