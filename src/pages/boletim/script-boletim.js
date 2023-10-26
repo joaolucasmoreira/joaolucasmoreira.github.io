@@ -4,7 +4,6 @@ let inputNotas = [];
 
 function save() {
   if (!verifMateAdd() && !verifVazio(2) && !verifNegativo(2)) {
-    document.querySelector("#orgResultNotas").style.display = "flex";
     let totalNotas = 0;
     let resultados = `<br> <b id="tituloBole">BOLETIM</b> `;
 
@@ -14,6 +13,7 @@ function save() {
     });
 
     if (!verifMaxNotas()) {
+      document.querySelector("#orgResultNotas").style.display = "flex";
       materias.push({
         id: materia.id++,
         nome: nomeMateria.value,
