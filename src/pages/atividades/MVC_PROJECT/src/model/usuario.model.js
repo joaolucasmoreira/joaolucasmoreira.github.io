@@ -13,6 +13,13 @@ class Usuario {
         this.nome = nome;
     }
 
+    getIdade() {
+        return this.idade;
+    }
+    setIdade(idade) {
+        this.idade = idade;
+    }
+
     getLogin() {
         return this.login;
     }
@@ -26,6 +33,6 @@ class Usuario {
     setSenha(senha) {
         this.senha = senha;
     }
-
 }
+
 export{Usuario};
