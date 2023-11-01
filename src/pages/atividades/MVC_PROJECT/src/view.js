@@ -10,3 +10,5 @@ const construtorGrafico = {
 }
 
 export {construtorGrafico};
+
+
