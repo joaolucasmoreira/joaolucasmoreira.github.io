@@ -5,7 +5,8 @@ const resultView = {
     tableResult.setAttribute("id", "resultTable");
     tableResult.className = "table table-borderless table-hover table-light";
     tableResult.innerHTML = `
-    <div class="d-flex justify-content-center">    
+    <div class="d-flex justify-content-center w-100">
+    <div class="w-25">    
     <thead class="table-dark">
             <tr>
               <th scope="col">#</th>
@@ -18,6 +19,7 @@ const resultView = {
         <tbody id="users-result">
        
         </tbody>
+        </div>
         </div>
     `;
     root.appendChild(tableResult);
