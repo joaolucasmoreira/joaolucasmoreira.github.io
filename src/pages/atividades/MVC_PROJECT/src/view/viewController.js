@@ -2,13 +2,15 @@ import { formNewUser } from "./form-new-user.js";
 import { resultView } from "./result-view.js";
 
 const viewController = {
-  build: () => {
-    formNewUser.build();
-    resultView.build();
-  },
-  update:(params)=>{
-    console.log(params)
-  }
-};
+    build:()=>{
+        formNewUser.build();
+        resultView.build();
+    },
 
-export { viewController };
+    update:(userArray, userToUpdate)=>{        
+        resultView.update(userArray);
+        formNewUser.update(userToUpdate);
+    }
+}
+
+export {viewController}
