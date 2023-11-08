@@ -2,7 +2,7 @@ import { viewController } from "./view/viewController.js";
 import { Usuario } from "./model/usuario.model.js";
 
 let data = [];
-const submitType = {NEW:0,UPDATE:1};
+const submitType = {NEW:0, UPDATE:1};
 let submitState = submitType.NEW;
 let currentId = null;
 
@@ -12,12 +12,11 @@ const handleSubmit = (event) => {
   if (submitState == submitType.NEW) {
     addUser(user);
   } else if (submitState == submitType.UPDATE) {
-    updateUser(user);
+    updateUser(currentId, user);
+    submitState = submitType.NEW;
     btnSub.innerText = "Salvar";
   }
-  viewController.update(data, new Usuario("",0,"",""))
-
-
+  viewController.update(data, new Usuario("",null,"",""))
 }
 
 const addUser = (newUser) => {
@@ -35,8 +34,8 @@ const deletUser = (index) => {
 const clickEsquerdo = (event) => {
   const currentId = event.target.closest('tr').id.split("")[4];
   alert(`Clicou com o botão esquerdo e o ${data[currentId].getNome().toUpperCase()} será carregado para edição`);
-  console.log(currentId);
   viewController.updateForm(data[currentId]);
+  submitState = submitType.UPDATE;
   btnSub.innerText = "Update";
 }
 
