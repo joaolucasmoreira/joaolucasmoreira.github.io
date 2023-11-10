@@ -12,7 +12,7 @@ const viewController = {
         formNewUser.update(userToUpdate);
     },
 
-    updateForm:(userToUpdate)=>{
+    updateForm:(userToUpdate)=>{ 
         formNewUser.update(userToUpdate);
     }
 }
