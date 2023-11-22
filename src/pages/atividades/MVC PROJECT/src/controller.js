@@ -1,10 +1,22 @@
 import { viewController } from "./view/viewController.js";
 import { Usuario } from "./model/usuario.model.js";
+import { dataService } from "./api/data.service.js";
 
 let data = [];
 const submitType = { NEW: 0, UPDATE: 1 };
 let submitState = submitType.NEW;
 let currentId = null;
+
+const loadData = async () => {
+  const temp = await dataService.carregarDados();
+
+  data = temp.map(
+    (usuario) =>
+      new Usuario(usuario.nome, usuario.idade, usuario.login, usuario.senha)
+  );
+
+  viewController.update(data, new Usuario("", null, "", ""));
+};
 
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -18,7 +30,6 @@ const handleSubmit = (event) => {
   }
   viewController.update(data, new Usuario("", null, "", ""));
 };
-
 
 const addUser = (newUser) => {
   data.push(newUser);
@@ -34,32 +45,29 @@ const deletUser = (index) => {
 
 const clickEsquerdo = (event) => {
   currentId = event.target.closest("tr").id.split("")[4];
-  
-  let confirm = window.confirm('O usuário selecionado será carregado para edição!');
-  
-  if (confirm) {
-  viewController.updateForm(data[currentId])
-  submitState = submitType.UPDATE;
-  btnSub.innerText = "Update";
-}
 
+  let confirm = window.confirm(
+    "O usuário selecionado será carregado para edição!"
+  );
+
+  if (confirm) {
+    viewController.updateForm(data[currentId]);
+    submitState = submitType.UPDATE;
+    btnSub.innerText = "Update";
+  }
 };
 
 const clickDireito = (event) => {
   event.preventDefault();
   if (event.button == 2) {
     currentId = event.target.closest("tr").id.split("")[4];
-    alert(
-      `O ${data[currentId]
-        .getNome()
-        .toUpperCase()} será deletado!`
-    );
+    alert(`O ${data[currentId].getNome().toUpperCase()} será deletado!`);
 
-    let confirm = window.confirm('Certeza que quer deletar esse usuário?');
+    let confirm = window.confirm("Certeza que quer deletar esse usuário?");
 
-    if (confirm){
-        deletUser(currentId);
-        viewController.update(data, new Usuario("", null, "", ""));
+    if (confirm) {
+      deletUser(currentId);
+      viewController.update(data, new Usuario("", null, "", ""));
     }
   }
 };
@@ -71,6 +79,9 @@ const controller = {
     const userList = document.getElementById("users-result");
     userList.addEventListener("click", clickEsquerdo);
     userList.addEventListener("contextmenu", clickDireito);
+    window.onload = () =>{
+      loadData();
+    }
   },
 };
 
